@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Meni Slider Portfolio</title>
+    <title>PRODAJA MOTORNIH VOZILA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -17,10 +17,9 @@
 
         <ul>
             <li><a href="#">Početna</a></li>
-            <li><a href="#">O nama</a></li>
-            <li><a href="#">Usluge</a></li>
-            <li><a href="#">Galerija</a></li>
+            <li><a href="#">Vozila</a></li>
             <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Galerija</a></li>
         </ul>
     </div>
 
@@ -29,9 +28,9 @@
     <div class="slider-wrapper">
         <button id="left-btn"><i class="arrow"></i></button>
         <div class="slider-images">
-            <img src="img/slide1.jpg">
-            <img src="img/slide2.jpg">
-            <img src="img/slide3.jpg">
+            <img src="img/auto.jpg">
+            <img src="img/bus.jpg">
+            <img src="img/kamion.jpg">
         </div>
         <button id="right-btn"><i class="arrow"></i></button>
     </div>
@@ -41,47 +40,48 @@
     <div class="portfolio-wrapper">
         <div class="portfolio-categories">
             <button data-category='sve' onclick="portfolioSort(this)">Sve</button>
-            <button data-category='restorani' onclick="portfolioSort(this)" class="brown">Restorani</button>
-            <button data-category='hoteli' onclick="portfolioSort(this)" class="blue">Hoteli</button>
-            <button data-category='korporacije' onclick="portfolioSort(this)" class="green">Korporacije</button>
+            <button data-category='automobili' onclick="portfolioSort(this)" class="brown">Automobili</button>
+            <button data-category='autobusi' onclick="portfolioSort(this)" class="blue">Autobusi</button>
+            <button data-category='kamioni' onclick="portfolioSort(this)" class="green">Kamioni</button>
             <button data-category='ostalo' onclick="portfolioSort(this)" class="rose">Ostalo</button>
         </div>
 
         <div class="portfolio-items">
-            <div class="portfolio-single-item blue" data-category='hoteli'>
-                <h3>Hotel 1</h3>
+            <div class="portfolio-single-item blue" data-category='automobili'>
+                <h3>Limuzine</h3>
             </div>
 
             <div class="portfolio-single-item rose" data-category='ostalo'>
-                <h3>Startup</h3>
+                <h3>Motori</h3>
             </div>
 
-            <div class="portfolio-single-item blue" data-category='hoteli, restorani'>
-                <h3>Hotel & Restoran</h3>
+
+            <div class="portfolio-single-item green" data-category='autobusi'>
+                <h3>Autobusi</h3>
             </div>
 
-            <div class="portfolio-single-item green" data-category='korporacije'>
-                <h3>Korporacija 1</h3>
-            </div>
-
-            <div class="portfolio-single-item brown" data-category='restorani'>
-                <h3>Restoran 1</h3>
+            <div class="portfolio-single-item brown" data-category='kamioni'>
+                <h3>Cisterna</h3>
             </div>
 
             <div class="portfolio-single-item rose" data-category='ostalo'>
-                <h3>XYZ Orgranizacija</h3>
+                <h3>Dijelovi i oprema</h3>
             </div>
 
-            <div class="portfolio-single-item blue" data-category='hoteli'>
-                <h3>Hotel 2</h3>
+            <div class="portfolio-single-item blue" data-category='automobili'>
+                <h3>Trkači</h3>
             </div>
 
-            <div class="portfolio-single-item green" data-category='korporacije'>
-                <h3>Korporacija 2</h3>
+            <div class="portfolio-single-item green" data-category='autobusi'>
+                <h3>Minibusevi</h3>
             </div>
 
-            <div class="portfolio-single-item brown" data-category='restorani'>
-                <h3>Restoran 2</h3>
+            <div class="portfolio-single-item brown" data-category='kamioni'>
+                <h3>Kiper</h3>
+            </div>
+
+            <div class="portfolio-single-item brown" data-category='kamioni'>
+                <h3>Šleper</h3>
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
     <div class="popup-modal">
         <button id="closeModal" onclick="closeModal()">X</button>
 
-        <h4>Modal Title</h4>
+        <h4>Želiš li postati naš član?</h4>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
