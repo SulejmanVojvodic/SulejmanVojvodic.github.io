@@ -3,4 +3,4 @@
 Ovdje ću uraditi projekat pomoću HTML, CSS i Javascripta koji će
 ćiniti moju web stranicu.
 
-Adresa web stranice je https://SulejmanVojvodic.gizhub.io
+Adresa web stranice je https://SulejmanVojvodic.github.io
