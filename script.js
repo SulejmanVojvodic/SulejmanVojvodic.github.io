@@ -96,3 +96,61 @@ const closeModal = () => {
     overlay.style.display = 'none';
 
 }
+/*
+var sviProizvodi;
+popuniPodatke = (data) => {
+    for (let i = 0; i < data.length; i++) {
+
+        //dodavanje reda u tabelu
+        let red = document.createElement("tr");
+        document.getElementById("podaciTabela").appendChild(red);
+
+        //dodavanje celije sa ID
+        let IDproizvoda = document.createElement("td");
+        red.appendChild(IDproizvoda);
+        IDproizvoda.innerHTML = data[i].id;
+        //dodavanje celije sa nazivom
+        let naziv = document.createElement("td");
+        red.appendChild(naziv);
+        naziv.innerHTML = data[i].name;
+        //dodavanje celije sa cijenom
+        let cijena = document.createElement("td");
+        red.appendChild(cijena);
+        cijena.innerHTML = data[i].price;
+
+        let godina = document.createElement("td");
+        red.appendChild(godina);
+        godina.innerHTML = data[i].year;
+
+        let proizvodac = document.createElement("td");
+        red.appendChild(proizvodac);
+        proizvodac.innerHTML = data[i].manufacturer;
+
+        //dodavanje celije sa slikom
+        let slikaUrl = document.createElement("img");
+        slikaUrl.setAttribute("src", data[i].photoUrl);
+        slikaUrl.setAttribute("width", "200");
+        slikaUrl.setAttribute("height", "150");
+        red.appendChild(imageUrl);
+    }
+}
+*/
+
+
+
+// API: https://ptf-web-dizajn-2022.azurewebsites.net/swagger/v1/swagger.json
+// GET
+
+function showResult() {
+    fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars')
+        .then(res => {
+            if (res.ok) {
+                console.log("GET request successful")
+            } else {
+                console.log("GET request unsuccessful")
+            } return res
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
+}
